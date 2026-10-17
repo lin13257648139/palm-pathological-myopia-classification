@@ -110,11 +110,12 @@ python -m src.evaluate \
 
 ![PALM 官方验证集混淆矩阵](artifacts/official_validation/confusion_matrix.png)
 
-详细的机器可读指标和逐图预测结果位于：
+详细的机器可读汇总指标和训练记录位于：
 
 - `artifacts/official_validation/metrics.json`
-- `artifacts/official_validation/predictions.csv`
 - `artifacts/training_history.csv`
+
+为避免公开逐图医学分类结果，逐图预测表仅保留在本地，不纳入公开仓库。
 
 ## 单张图像推理
 
@@ -131,3 +132,4 @@ python -m src.predict path/to/fundus.jpg
 - 数据规模有限，模型在不同设备、人群和图像质量上的泛化能力仍需外部验证。
 - 模型只输出 PM 风险分类，不提供病灶分割或临床可解释结论。
 - 结果受数据划分、随机种子、超参数和预训练权重影响，应结合完整配置理解。
+
