@@ -1,0 +1,40 @@
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# PALM datasets are distributed separately by the challenge organizers.
+PALM-Training400/
+PALM-Validation400/
+PALM-Validation-GT/
+valid_gt/
+data/
+
+# Local experiments and large binary artifacts
+*.pth
+*.pt
+*.onnx
+*.mp4
+*.doc
+*.docx
+models/
+artifacts/checkpoints/
+
+# Legacy exploratory notebooks contain large cell outputs and local paths.
+*.ipynb
+
+# Legacy experimental exports produced by the exploratory notebook.
+validation_predictions.csv
+deployment_demo_results.csv
+提交数据示例.csv
