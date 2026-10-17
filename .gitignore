@@ -30,6 +30,8 @@ data/
 *.docx
 models/
 artifacts/checkpoints/
+# Per-image medical predictions stay local; publish only aggregate metrics.
+artifacts/official_validation/predictions.csv
 
 # Legacy exploratory notebooks contain large cell outputs and local paths.
 *.ipynb
@@ -38,3 +40,4 @@ artifacts/checkpoints/
 validation_predictions.csv
 deployment_demo_results.csv
 提交数据示例.csv
+
